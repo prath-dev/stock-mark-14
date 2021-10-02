@@ -1,0 +1,32 @@
+  body {
+      font-family: 'Times New Roman', Times, serif; 
+      background-color: salmon;
+  }
+.container { 
+    justify-content: center; 
+    flex-direction: column; 
+    text-align: center; 
+    margin-top: 100px;  
+    color: rebeccapurple ; 
+}
+input {
+    font-size: large; 
+    margin: auto; 
+    width: 50%; 
+    height: 50px; 
+    font-style: italic; 
+    align-items: center;  
+    padding-left: 30px; 
+    padding-right: 30px; 
+    padding-top: 50px; 
+    border-radius: 30px; 
+    font-weight: bolder;
+    
+}  
+ button {
+    height: 50px;  
+    width: 20%; 
+    border : 3px red solid ; 
+    background-color: tomato;
+
+ }
