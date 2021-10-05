@@ -20,7 +20,7 @@ input {
     padding-right: 30px; 
     padding-top: 50px; 
     border-radius: 30px; 
-    font-weight: bolder;
+    font-weight: bolder; 
     
 }  
  button {
@@ -29,4 +29,8 @@ input {
     border : 3px red solid ; 
     background-color: tomato;
 
- }
+ } 
+ #output{ 
+    text-align: center ;
+   color: rebeccapurple ;
+  }

@@ -4,7 +4,7 @@ let initialstock =  document.querySelector('#initial-stock') ;
 let currentprice = document.querySelector('#current-price') ;
 let submitbtn = document.querySelector('#sumbit') ; 
 let output = document.querySelector('#output') ;    
-submitbtn.addEventListener('click',clickHandeler) ; 
+submitbtn.addEventListener('click',clickHandeler) ;  
 
 
 function clickHandeler () {
@@ -18,14 +18,18 @@ function clickHandeler () {
                 let loss = ((  initial - current) * quantity).toFixed(2) ;
              let Losspercentage = ( (loss /initial) * 100).toFixed(2);   
              output.innerText= "the loss is" + loss + "and the loss percentage is" + Losspercentage ; 
+             document.body.style.backgroundColor = "red"
+               
  } 
  else if    (current> initial ) {
                  let profit = ((  current - initial) * quantity).toFixed(2) ; 
                  let profitpercentage = ( (profit * initial) * 100).toFixed(2) ; 
-                 output.innerText= "the profit is" + profit + "and the profit percentage is" + profitpercentage ;  
+                 output.innerText= "the profit is" + profit + "and the profit percentage is" + profitpercentage ; 
+                 document.body.style.backgroundColor = "green" 
                     } 
              else {
                  output.innerText= "No Pain No Gain" ; 
+                 document.body.style.backgroundColor = "black"
                  
              }  
 
