@@ -27,10 +27,19 @@ function clickHandeler () {
                  output.innerText= "the profit is" + profit + "and the profit percentage is" + profitpercentage ; 
                  document.body.style.backgroundColor = "green" 
                     } 
-             else {
-                 output.innerText= "No Pain No Gain" ; 
-                 document.body.style.backgroundColor = "black"
-                 
-             }  
+             
+ else if    (current> initial ) {
+    let profit = ((  current - initial) * quantity).toFixed(2) ; 
+    let profitpercentage = ( (profit * initial) * 100).toFixed(2) ; 
+    output.innerText= "the profit is" + profit + "and the profit percentage is" + profitpercentage ; 
+    document.body.style.backgroundColor = "green" 
+       } 
 
-         }
+else (initial=="" || quantity=="" ||current==""|| initial<0 || quantity<0 ||current<0) 
+{
+output.innerText = "input should not be empty, negative and 0 ";
+document.body.style.backgroundColor = "yellow"  ;
+}  
+        }
+
+         
