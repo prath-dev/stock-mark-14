@@ -35,7 +35,7 @@ function clickHandeler () {
     document.body.style.backgroundColor = "green" 
        } 
 
-else (initial=="" || quantity=="" ||current==""|| initial<0 || quantity<0 ||current<0) 
+else if (initial=="" || quantity=="" ||current==""|| initial<0 || quantity<0 ||current<0) 
 {
 output.innerText = "input should not be empty, negative and 0 ";
 document.body.style.backgroundColor = "yellow"  ;
