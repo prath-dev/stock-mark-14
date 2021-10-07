@@ -39,7 +39,12 @@ else if (initial=="" || quantity=="" ||current==""|| initial<0 || quantity<0 ||c
 {
 output.innerText = "input should not be empty, negative and 0 ";
 document.body.style.backgroundColor = "yellow"  ;
-}  
+}   
+else {
+   output.innerText= "No loss NO profit" ; 
+   document.body.style.backgroundColor = "blue"  ;
+
+}
         }
 
          
